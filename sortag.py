@@ -68,6 +68,5 @@ elif len(args) > 2:
     print("Too many args given")
 else:
     dir = path.abspath(sys.argv[1])
-    print(dir)
-    results = scan_folder(test_dir)
-    sort(test_dir,results)
+    results = scan_folder(dir)
+    sort(dir,results)
